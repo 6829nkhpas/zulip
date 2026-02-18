@@ -20,6 +20,13 @@ format used by the Zulip server that they are interacting with.
 
 ## Changes in Zulip 12.0
 
+**Feature level 469**
+
+* [`GET /attachments`](/api/get-attachments), [`GET /events`](/api/get-events):
+  The `messages` field in `Attachment` objects, previously an array of
+  objects containing `id` and `date_sent` properties, has been replaced
+  by a `message_ids` field, which is a simple array of message IDs.
+
 **Feature level 468**
 
 * [`POST /register_client_device`](/api/register-client-device):
